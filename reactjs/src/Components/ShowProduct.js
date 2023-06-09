@@ -96,6 +96,7 @@ class ShowProduct extends Component {
     handleChange = (file) => {
         this.setState({ fileUpload: file[0] });
     };
+    
 
     async submitEditProduct(e) {
         e.preventDefault();
