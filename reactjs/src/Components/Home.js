@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './App.css';
+import "./Home.css";
 // import Lazada from "./Lazada";
 
 function Home() {
@@ -22,9 +22,9 @@ function Home() {
             <div className="home-container">
                 {data.map((item) => (
                     <div className="home-card" key={item.id}>
-                        <img src={`source/image/product/${item.image}`} alt="{item.name}" />
-                        <h2>{item.Name}</h2>
-                        
+                        <img src={`http://127.0.0.1:8000/source/image/product/${item.Image}`} alt="{item.name}" />
+                        <h2>{item.name}</h2>
+                    
                         <p>{item.Price}</p>
                         <p>{item.Shop}</p>
                         <div className="card-buttons">
